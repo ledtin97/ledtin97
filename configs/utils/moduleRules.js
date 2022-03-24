@@ -60,7 +60,8 @@ const CSS_MODULE_RULE_DEVELOPMENT = {
     test: RegExp.CSS_REG_EXP,
     use: [
         'style-loader',
-        'css-loader'
+        'css-loader',
+        'postcss-loader'
     ]
 };
 
@@ -73,7 +74,13 @@ const MODULES_CSS_MODULE_RULE_DEVELOPMENT = {
             options: {
                 modules: true
             }
-        }
+        },
+        {
+            loader: 'postcss-loader',
+            options: {
+                modules: true,
+            }
+        },
     ]
 };
 
@@ -81,7 +88,8 @@ const CSS_MODULE_RULE_PRODUCT = {
     test: RegExp.CSS_REG_EXP,
     use: [
         require('mini-css-extract-plugin').loader,
-        'css-loader'
+        'css-loader',
+        'postcss-loader'
     ]
 }
 
@@ -94,7 +102,13 @@ const MODULES_CSS_MODULE_RULE_PRODUCT = {
             options: {
                 modules: true
             }
-        }
+        },
+        {
+            loader: 'postcss-loader',
+            options: {
+                modules: true,
+            }
+        },
     ]
 }
 
@@ -111,6 +125,12 @@ const SASS_AND_SCSS_MODULE_RULE_DEVELOPMENT = {
         'resolve-url-loader',
         {
             loader: 'sass-loader',
+            options: {
+                sourceMap: true
+            }
+        },
+        {
+            loader: 'postcss-loader',
             options: {
                 sourceMap: true
             }
@@ -131,6 +151,12 @@ const SASS_AND_SCSS_MODULE_RULE_PRODUCT = {
         'resolve-url-loader',
         {
             loader: 'sass-loader',
+            options: {
+                sourceMap: true
+            }
+        },
+        {
+            loader: 'postcss-loader',
             options: {
                 sourceMap: true
             }

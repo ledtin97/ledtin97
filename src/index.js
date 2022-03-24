@@ -3,14 +3,16 @@ import ReactDOM from "react-dom";
 import Test from './components/test';
 import { StateProvider } from './store.js';
 
+import './index.css'
+
 const App = () => (
     <StateProvider>
-        <Test message='WORLD' />,
+        <Test message='WORLD' />
     </StateProvider>
 )
 
 const currentNode = document.getElementById("root")
-ReactDOM.render(<App/>, currentNode);
+ReactDOM.render(<App />, currentNode);
 
 // if ('serviceWorker' in navigator) {
 //     window.addEventListener('load', () => {
