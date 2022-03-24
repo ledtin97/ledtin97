@@ -1,5 +1,5 @@
 {
-    "title": "Test Webpack App",
+    "title": "Le Dinh Bao Tin",
     "favicon": "./public/favicon.ico",
     "base": { "href": "http://example.com/some/page.html" },
     "meta": { },
