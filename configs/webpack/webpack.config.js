@@ -9,7 +9,7 @@ const ENTRY = `${DirName}/src/index.js`;
 const OUTPUT = {
     path: `${DirName}/docs`,
     filename: 'assets/js/[name].[contenthash:8].js',
-    publicPath: '/'
+    publicPath: '/ledtin97/'
 };
 const RESOLVE = {
     extensions: ['.js', '.jsx']
