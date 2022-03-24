@@ -7,7 +7,7 @@ const DirName = require('path').resolve(__dirname, '../../');
 
 const ENTRY = `${DirName}/src/index.js`;
 const OUTPUT = {
-    path: `${DirName}/dist`,
+    path: `${DirName}/build`,
     filename: 'assets/js/[name].[contenthash:8].js',
     publicPath: '/'
 };
