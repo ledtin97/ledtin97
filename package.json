@@ -4,7 +4,7 @@
   "main": "index.js",
   "author": "ledtin",
   "license": "MIT",
-  "homepage": "https://ledtin97.github.io/ledtin",
+  "homepage": "https://ledtin97.github.io/ledtin97.github.io",
   "scripts": {
     "start": "webpack-dev-server --mode development --config configs/webpack/webpack.js",
     "build": "webpack --mode production --config configs/webpack/webpack.js",
