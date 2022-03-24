@@ -1,0 +1,18 @@
+{
+    "title": "Test Webpack App",
+    "favicon": "./public/favicon.ico",
+    "base": { "href": "http://example.com/some/page.html" },
+    "meta": { },
+    "devServer": {
+        "compress": true,
+        "historyApiFallback": true,
+        "open": true,
+        "overlay": true,
+        "port": 3000
+    },
+    "prodOptimization": {
+        "dropConsole": false,
+        "comments": false,
+        "warnings": false
+    }
+}
